@@ -1,0 +1,76 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #66f0d4, #9bb4ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  min-width: 400px;
+}
+
+/* Question & options */
+#options-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#options-list li {
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 300px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#options-list li:hover {
+  background-color: #d0eaff;
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background-color: rgb(45, 38, 38);
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Hidden utility class */
+.hidden {
+  display: none;
+}
+
+/* Score Styling */
+#score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003399;
+}
